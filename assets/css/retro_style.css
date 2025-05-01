@@ -1,0 +1,252 @@
+/* Retro Gaming Style CSS for RainPath Virtual Staining App */
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:wght@400;700&display=swap');
+
+/* Main styles */
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    background-color: #1E1E1E;
+    background-image: 
+        linear-gradient(rgba(40, 40, 40, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(40, 40, 40, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'VT323', monospace !important;
+    text-transform: uppercase;
+    color: #FFD700 !important;
+    text-shadow: 3px 3px 0px #FF6B6B;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem !important;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+    border-bottom: 4px solid #FFD700;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Sidebar */
+.sidebar .sidebar-content {
+    background-color: #2E2E2E;
+    background-image: linear-gradient(#3E3E3E, #2E2E2E);
+    border-right: 4px solid #FFD700;
+}
+
+/* Cards and sections */
+.stCard {
+    border: 4px solid #FFD700;
+    border-radius: 0px !important;
+    background-color: #3E3E3E !important;
+    box-shadow: 8px 8px 0px #FF6B6B !important;
+    margin-bottom: 2rem !important;
+    padding: 1rem !important;
+}
+
+/* Buttons */
+.stButton > button, .stDownloadButton > button {
+    font-family: 'VT323', monospace !important;
+    border: 3px solid #FFD700 !important;
+    border-radius: 0px !important;
+    background-color: #2E2E2E !important;
+    color: #FFD700 !important;
+    font-size: 1.2rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    box-shadow: 4px 4px 0px #FF6B6B !important;
+    transition: all 0.1s ease !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.stButton > button:hover, .stDownloadButton > button:hover {
+    transform: translate(2px, 2px) !important;
+    box-shadow: 2px 2px 0px #FF6B6B !important;
+}
+
+.stButton > button:active, .stDownloadButton > button:active {
+    transform: translate(4px, 4px) !important;
+    box-shadow: 0px 0px 0px #FF6B6B !important;
+}
+
+/* Sliders */
+.stSlider > div > div {
+    color: #FFD700 !important;
+}
+
+.stSlider > div > div > div > div {
+    background-color: #FF6B6B !important;
+}
+
+.stSlider > div > div > div > div > div {
+    background-color: #FFD700 !important;
+    border-radius: 0px !important;
+}
+
+/* Progress bar */
+.stProgress > div > div > div > div {
+    background-color: #FFD700 !important;
+    border-radius: 0px !important;
+}
+
+/* Text inputs */
+.stTextInput > div > div > input {
+    border: 3px solid #FFD700 !important;
+    border-radius: 0px !important;
+    background-color: #2E2E2E !important;
+    color: #FFFFFF !important;
+    font-family: 'Space Mono', monospace !important;
+}
+
+/* Selectbox */
+.stSelectbox > div > div > div {
+    border: 3px solid #FFD700 !important;
+    border-radius: 0px !important;
+    background-color: #2E2E2E !important;
+    color: #FFFFFF !important;
+}
+
+/* Metric */
+.stMetric {
+    background-color: #2E2E2E !important;
+    border: 3px solid #FFD700 !important;
+    border-radius: 0px !important;
+    box-shadow: 4px 4px 0px #FF6B6B !important;
+    padding: 0.5rem !important;
+}
+
+.stMetric > div {
+    justify-content: center !important;
+}
+
+.stMetric label {
+    font-family: 'VT323', monospace !important;
+    color: #FFD700 !important;
+    font-size: 1.5rem !important;
+    text-transform: uppercase !important;
+}
+
+.stMetric p {
+    font-family: 'VT323', monospace !important;
+    color: #FFFFFF !important;
+    font-size: 2rem !important;
+    text-align: center !important;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #2E2E2E !important;
+    border: 3px solid #FFD700 !important;
+    border-radius: 0px !important;
+    color: #FFD700 !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 1.2rem !important;
+    text-transform: uppercase !important;
+    margin-right: 5px !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #FFD700 !important;
+    color: #2E2E2E !important;
+}
+
+/* Table */
+.stTable, .dataframe {
+    font-family: 'Space Mono', monospace !important;
+    border: 3px solid #FFD700 !important;
+}
+
+.stTable th, .dataframe th {
+    background-color: #FFD700 !important;
+    color: #1E1E1E !important;
+    font-family: 'VT323', monospace !important;
+    text-transform: uppercase !important;
+    font-size: 1.2rem !important;
+    padding: 0.5rem !important;
+}
+
+.stTable td, .dataframe td {
+    font-family: 'Space Mono', monospace !important;
+    border: 1px solid #FFD700 !important;
+    padding: 0.5rem !important;
+}
+
+/* Loading spinner */
+.stSpinner > div > div > div {
+    border-color: #FFD700 transparent transparent transparent !important;
+}
+
+/* Pixel art elements */
+.pixel-border {
+    border-image-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3' height='3'%3E%3Crect width='1' height='1' fill='%23FFD700'/%3E%3Crect width='1' height='1' x='1' fill='transparent'/%3E%3Crect width='1' height='1' x='2' fill='%23FFD700'/%3E%3Crect width='1' height='1' y='1' fill='transparent'/%3E%3Crect width='1' height='1' x='1' y='1' fill='%23FFD700'/%3E%3Crect width='1' height='1' x='2' y='1' fill='transparent'/%3E%3Crect width='1' height='1' y='2' fill='%23FFD700'/%3E%3Crect width='1' height='1' x='1' y='2' fill='transparent'/%3E%3Crect width='1' height='1' x='2' y='2' fill='%23FFD700'/%3E%3C/svg%3E");
+    border-image-repeat: repeat;
+    border-image-slice: 1;
+    border-image-width: 4px;
+    padding: 10px;
+}
+
+/* Game title animation */
+@keyframes pulse {
+    0% { text-shadow: 3px 3px 0px #FF6B6B; }
+    50% { text-shadow: 6px 6px 0px #FF6B6B; }
+    100% { text-shadow: 3px 3px 0px #FF6B6B; }
+}
+
+.title {
+    animation: pulse 2s infinite;
+}
+
+/* 8-bit tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px dotted #FFD700;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #2E2E2E;
+    border: 3px solid #FFD700;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 0px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-family: 'VT323', monospace;
+    font-size: 1rem;
+    box-shadow: 4px 4px 0px #FF6B6B;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Pixel art icons */
+.pixel-icon {
+    image-rendering: pixelated;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}

@@ -1,0 +1,105 @@
+{
+    "app": {
+      "title": "RainPath Virtual Staining",
+      "version": "1.0.0",
+      "description": "Virtual staining model enhancement for specific tissue types"
+    },
+    "ui": {
+      "theme": "retro_gaming",
+      "primary_color": "#FFD700",
+      "secondary_color": "#FF6B6B",
+      "background_color": "#1E1E1E",
+      "fonts": {
+        "headings": "VT323",
+        "body": "Space Mono"
+      }
+    },
+    "tissue_types": [
+      {
+        "name": "normal",
+        "display_name": "Normal Tissue",
+        "description": "Regular cellular patterns with organized structure"
+      },
+      {
+        "name": "tumor",
+        "display_name": "Tumor Tissue",
+        "description": "Irregular cellular patterns with abnormal nuclei"
+      },
+      {
+        "name": "fibrotic",
+        "display_name": "Fibrotic Tissue",
+        "description": "Excessive connective tissue with linear patterns"
+      },
+      {
+        "name": "necrotic",
+        "display_name": "Necrotic Tissue",
+        "description": "Dying tissue with cellular debris and fragmentation"
+      }
+    ],
+    "stain_types": [
+      {
+        "name": "H&E",
+        "display_name": "Hematoxylin & Eosin",
+        "description": "Highlights cell nuclei in blue-purple and cytoplasm in pink. The most common stain used in histology."
+      },
+      {
+        "name": "Masson's Trichrome",
+        "display_name": "Masson's Trichrome",
+        "description": "Shows collagen fibers in blue, nuclei in black, and cytoplasm/muscle in red. Useful for identifying fibrotic tissue."
+      },
+      {
+        "name": "PAS",
+        "display_name": "Periodic acid–Schiff",
+        "description": "Highlights structures containing glycogen, mucus and basement membranes in magenta. Used to identify certain fungal infections and kidney conditions."
+      },
+      {
+        "name": "Silver",
+        "display_name": "Silver Stain",
+        "description": "Used to visualize reticulin fibers, basement membranes, and certain microorganisms. They appear black or dark brown against a lighter background."
+      },
+      {
+        "name": "Congo Red",
+        "display_name": "Congo Red",
+        "description": "Used to identify amyloid deposits, which appear red-orange. Under polarized light, amyloid shows apple-green birefringence."
+      }
+    ],
+    "model": {
+      "default_quality": 0.85,
+      "architecture": "GAN",
+      "parameters": {
+        "batch_size": 16,
+        "learning_rate": 0.0002,
+        "epochs": 100,
+        "image_size": 256
+      },
+      "metrics": [
+        "Structural Similarity",
+        "Color Accuracy",
+        "Nuclei Detection",
+        "Edge Preservation",
+        "Overall Quality"
+      ]
+    },
+    "data": {
+      "synthetic": {
+        "path": "data/synthetic",
+        "samples_per_type": 10,
+        "size": [400, 400]
+      },
+      "samples": {
+        "path": "data/samples"
+      }
+    },
+    "paths": {
+      "models": "models",
+      "results": "results",
+      "logs": "logs"
+    },
+    "features": {
+      "enable_real_time_staining": true,
+      "enable_model_training": false,
+      "enable_performance_metrics": true,
+      "enable_tissue_comparison": true,
+      "enable_stain_comparison": true
+    }
+  }
